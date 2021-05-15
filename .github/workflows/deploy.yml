@@ -16,5 +16,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
-            cd ~
-            git clone https://github.com/ryanjansen/ryansite ryansite 
+            cd ~/ryansite
+            git pull
+            npm ci
+            npm run build
+            cd server
+            pm2 restart app.js
