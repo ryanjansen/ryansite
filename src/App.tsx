@@ -18,7 +18,7 @@ function App({}: AppProps) {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is Ryan's Awesome Site!
+          Finished setting up CI/CD WOOO!
         </p>
         <p>
           Page has been open for <code>{count}</code> seconds.
